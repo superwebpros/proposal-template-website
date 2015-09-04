@@ -42,6 +42,14 @@ activate :navtree do |options|
   options.home_title = 'Front Page'
   # options.ext_whitelist = ['.md', '.markdown', '.mkd']
 end
+# Activate Github Deploying
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'master'
+  deploy.build_before = true
+end
+
+activate :directory_indexes
 
 helpers do
 
