@@ -254,7 +254,7 @@ pre > code {
   padding: 0 1em;
 
   a {
-    color: $orangey;
+    color: $cognite-blue;
     text-decoration: underline;
   }
 }
@@ -342,4 +342,11 @@ pre > code {
 .small-text {
   clear: both;
   padding: 1em 0 1em 0;
+}
+
+.footer-logo {
+  display: inline-block;
+  clear: both;
+  text-align: center;
+  max-height: 40px;
 }

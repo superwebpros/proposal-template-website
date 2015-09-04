@@ -1,0 +1,22 @@
+# Timing and Milestones
+
+## Timing
+The project will be completed by <%= data.proposal.end_date %>
+
+## Milestones
+Each of the following reflect important milestones, the completion of which will constitute the successful completion of the project:  
+
+<ul>
+	<% data.proposal.milestones.each do |m| %>
+		<li><%= m %> </li>
+	<% end %>
+</ul>
+
+## Project Restrictions  
+The following are considered out of scope for this project:  
+
+<ul>
+	<% data.proposal.restrictions.each do |p| %>
+		<li><%= p %></li>
+	<% end %>
+</ul>

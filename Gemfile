@@ -4,6 +4,7 @@ source 'http://rubygems.org'
 
 gem "middleman", "~> 3.3.2"
 gem "middleman-syntax"
+gem "middleman-deploy"
 gem "redcarpet" # For github-flavored markdown
 gem "middleman-navtree"
 gem "titleize", "~> 1.3.0" # For title-casing things

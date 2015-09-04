@@ -1,4 +1,5 @@
 ---
-index.md: /index.md
-1-first-page.md: /1-first-page.md
-2-second-page.md: /2-second-page.md
+index.md.erb: /index.md.erb
+1-project-summary.md.erb: /1-project-summary.md.erb
+2-timing-and-milestones.md.erb: /2-timing-and-milestones.md.erb
+sitemap.xml.erb: /sitemap.xml.erb
