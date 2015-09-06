@@ -4,7 +4,7 @@ index.md.erb: /index.md.erb
 2-timing-and-milestones.md.erb: /2-timing-and-milestones.md.erb
 3-scope-of-services.md.erb: /3-scope-of-services.md.erb
 4-scope-explanation.md.erb: /4-scope-explanation.md.erb
-5-terms.md: /5-terms.md
+5-terms.md.erb: /5-terms.md.erb
 6-fees.md.erb: /6-fees.md.erb
 7-approval.md: /7-approval.md
 sitemap.xml.erb: /sitemap.xml.erb
