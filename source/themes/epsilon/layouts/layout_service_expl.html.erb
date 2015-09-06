@@ -45,7 +45,80 @@
           <section class="main-content" role="main">
             <div class="main-content-source">
               <%= yield %>
+
+              <% if data.scope.services.information_architecture %>    
+                 <h2>Information Architecture</h2>
+                <% data.scope.information_architecture.each do |d| %>
+                  <% d.each do |q| %>
+                    <% if q['included'] %>
+                      <h3><%= q['description'] %></h3>
+                      <p><%= q['explanation'] %></p>
+                    <% end %>    
+                  <% end %>
+                <% end %>
+              <% end %>
+
+              <% if data.scope.services.seo %>   
+                <h2>SEO</h2> 
+                <% data.scope.seo.each do |d| %>
+                  <% d.each do |q| %>
+                    <% if q['included'] %>
+                      <h3><%= q['description'] %></h3>
+                      <p><%= q['explanation'] %></p>
+                    <% end %>    
+                  <% end %>
+                <% end %>
+              <% end %>
+
+              <% if data.scope.services.content_strategy %>   
+                <h2>Content Strategy</h2> 
+                <% data.scope.content_strategy.each do |d| %>
+                  <% d.each do |q| %>
+                    <% if q['included'] %>
+                      <h3><%= q['description'] %></h3>
+                      <p><%= q['explanation'] %></p>
+                    <% end %>    
+                  <% end %>
+                <% end %>
+              <% end %>
+
+              <% if data.scope.services.web_design %>    
+                <h2>Web Design</h2>
+                <% data.scope.web_design.each do |d| %>
+                  <% d.each do |q| %>
+                    <% if q['included'] %>
+                      <h3><%= q['description'] %></h3>
+                      <p><%= q['explanation'] %></p>
+                    <% end %>    
+                  <% end %>
+                <% end %>
+              <% end %>
+
+              <% if data.scope.services.web_development %>   
+                <h2>Web Development</h2> 
+                <% data.scope.web_development.each do |d| %>
+                  <% d.each do |q| %>
+                    <% if q['included'] %>
+                      <h3><%= q['description'] %></h3>
+                      <p><%= q['explanation'] %></p>
+                    <% end %>    
+                  <% end %>
+                <% end %>
+              <% end %>
+
+              <% if data.scope.services.reporting %>    
+                <h2>Reporting</h2>
+                <% data.scope.reporting.each do |d| %>
+                  <% d.each do |q| %>
+                    <% if q['included'] %>
+                      <h3><%= q['description'] %></h3>
+                      <p><%= q['explanation'] %></p>
+                    <% end %>    
+                  <% end %>
+                <% end %>
+              <% end %>
             </div>
+
             <nav class="main-content-nav clearfix" role="navigation">
               <ul>
                 <li><%= previous_link(data.tree) %></li>
@@ -66,10 +139,10 @@
                 </nav>
               </div>
 
-              <div class="block open-source">
+              <!-- <div class="block open-source">
                 <h3>This book is open source</h3>
                 <p>The source of this book is <a href="<%= data.book.github_url %>">hosted on Github</a>. Go, ahead. Check it out.</p>
-              </div>
+              </div> -->
 
               <!--
               <div class="block downloads">
@@ -81,7 +154,7 @@
               </div>
               -->
 
-              <div class="block translations">
+              <!-- <div class="block translations">
                 <h3>Book translations</h3>
                 <p>This book is translated into
                   <a href="#">Spanish</a>
@@ -93,7 +166,7 @@
               <div class="block license">
                 <h3>License</h3>
                 <p>This book is licensed under the <a href="<%= data.book.license_url %>"><%= data.book.license_name %></a> license.</p>
-              </div>
+              </div> -->
 
             </div><!-- end aside-wrapper -->
           </aside>

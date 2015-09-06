@@ -1,3 +1,5 @@
 ---
 client_name: Test Client
 client_owner: Owner's Name
+client_email: "client@email.com"
+client_description: "a successful social media firm in Lansing, Michigan"

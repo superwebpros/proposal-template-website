@@ -1,0 +1,122 @@
+# Scope of Services
+Cognite Labs is excited to work with <%= data.client.client_name %>. A summary of the services we expect to provide includes (details on next page):
+
+<% if data.scope.services.information_architecture %>    
+  <table>
+  	<thead>
+  		<th style="border-collapse: collapse;" colspan="2">Information Architecture</th>
+  	</thead>
+  	<tbody>
+  		<% data.scope.information_architecture.each do |d| %>
+				<% d.each do |q| %>
+					<% if q['included'] %>
+						<tr>
+							<td> <%= q['description'] %> </td>
+							<td style="text-align: center;"> <%= q['quantity'] %> </td>
+						</tr>
+					<% end %>		 
+				<% end %>
+			<% end %>
+  	</tbody>
+  </table>
+<% end %>
+
+<% if data.scope.services.seo %>    
+  <table>
+  	<thead>
+  		<th style="border-collapse: collapse;" colspan="2">SEO</th>
+  	</thead>
+  	<tbody>
+  		<% data.scope.seo.each do |d| %>
+				<% d.each do |q| %>
+					<% if q['included'] %>
+						<tr>
+							<td> <%= q['description'] %> </td>
+							<td style="text-align: center;"> <%= q['quantity'] %> </td>
+						</tr>
+					<% end %>		 
+				<% end %>
+			<% end %>
+  	</tbody>
+  </table>
+<% end %>
+
+<% if data.scope.services.content_strategy %>    
+  <table>
+  	<thead>
+  		<th style="border-collapse: collapse;" colspan="2">Content Strategy</th>
+  	</thead>
+  	<tbody>
+  		<% data.scope.content_strategy.each do |d| %>
+				<% d.each do |q| %>
+					<% if q['included'] %>
+						<tr>
+							<td> <%= q['description'] %> </td>
+							<td style="text-align: center;"> <%= q['quantity'] %> </td>
+						</tr>
+					<% end %>		 
+				<% end %>
+			<% end %>
+  	</tbody>
+  </table>
+<% end %>
+
+<% if data.scope.services.web_design %>    
+  <table>
+  	<thead>
+  		<th style="border-collapse: collapse;" colspan="2">Web Design</th>
+  	</thead>
+  	<tbody>
+  		<% data.scope.web_design.each do |d| %>
+				<% d.each do |q| %>
+					<% if q['included'] %>
+						<tr>
+							<td> <%= q['description'] %> </td>
+							<td style="text-align: center;"> <%= q['quantity'] %> </td>
+						</tr>
+					<% end %>		 
+				<% end %>
+			<% end %>
+  	</tbody>
+  </table>
+<% end %>
+
+<% if data.scope.services.web_development %>    
+  <table>
+  	<thead>
+  		<th style="border-collapse: collapse;" colspan="2">Web Development</th>
+  	</thead>
+  	<tbody>
+  		<% data.scope.web_development.each do |d| %>
+				<% d.each do |q| %>
+					<% if q['included'] %>
+						<tr>
+							<td> <%= q['description'] %> </td>
+							<td style="text-align: center;"> <%= q['quantity'] %> </td>
+						</tr>
+					<% end %>		 
+				<% end %>
+			<% end %>
+  	</tbody>
+  </table>
+<% end %>
+
+<% if data.scope.services.reporting %>    
+  <table>
+  	<thead>
+  		<th style="border-collapse: collapse;" colspan="2">Reporting</th>
+  	</thead>
+  	<tbody>
+  		<% data.scope.reporting.each do |d| %>
+				<% d.each do |q| %>
+					<% if q['included'] %>
+						<tr>
+							<td> <%= q['description'] %> </td>
+							<td style="text-align: center;"> <%= q['quantity'] %> </td>
+						</tr>
+					<% end %>		 
+				<% end %>
+			<% end %>
+  	</tbody>
+  </table>
+<% end %>
