@@ -6,6 +6,8 @@ require 'middleman-navtree'
 # require 'middleman-linkswap'
 # activate :linkswap
 
+# require 'makepdf'
+
 # Configuration For Themes
 set :layouts_dir, 'themes/' + data.book.theme.downcase + '/layouts'
 set :css_dir, 'themes/' + data.book.theme.downcase + '/stylesheets'
@@ -15,6 +17,7 @@ set :source, 'source'
 
 # Disable layout on the sitemap page.
 page "/sitemap.xml", :layout => false
+# page "*.pdf", :layout => false
 
 # Take steps to ignore the themes we aren't using, including:
 # 1. Ignore the unchosen themes so they aren't built.

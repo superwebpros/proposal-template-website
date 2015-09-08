@@ -10,6 +10,9 @@ gem "middleman-navtree"
 gem "titleize", "~> 1.3.0" # For title-casing things
 # gem "middleman-linkswap" # Not including for now.
 
+gem "pdfkit"
+gem "wkhtmltopdf_binary_provider"
+
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 

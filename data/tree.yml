@@ -8,3 +8,4 @@ index.md.erb: /index.md.erb
 6-fees.md.erb: /6-fees.md.erb
 7-approval.md: /7-approval.md
 sitemap.xml.erb: /sitemap.xml.erb
+test.pdf.rpdf: /test.pdf.rpdf
