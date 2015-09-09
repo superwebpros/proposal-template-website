@@ -9,6 +9,5 @@ Invoices will be submitted electronically, to <%= data.client.client_email %> (o
 
 For this project, the payment schedule will be as follows:
 
-* Invoice 1 will be submitted on *****, in order to retain us.
-* Invoice 2 will be submitted upon milestone....
-* Invoice 3 will be submitted upon completion of the project...
+* Invoice 1 will be due on <%= (Date.parse(data.proposal.proposal_date) + 7).strftime("%B %e, %Y") %>, in order to retain us.
+* Invoice 2 will be due upon completion of the project (anticipated <%= (Date.parse(data.proposal.end_date) + 7).strftime("%B %e, %Y") %>)

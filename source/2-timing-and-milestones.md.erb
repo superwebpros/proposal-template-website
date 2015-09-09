@@ -7,19 +7,32 @@ The project will be completed by <%= data.proposal.end_date %>
 Each of the following reflect important milestones, the completion of which will constitute the successful completion of the project:  
 
 <ul>
+<% if data.proposal.milestones.nil? %>
+	<li>Two weeks after kickoff we will have a visual design completed.</li>
+	<li>We will have a completed site within 2 weeks of design approval.</li>
+<% else %>
 	<% data.proposal.milestones.each do |m| %>
 		<li><%= m %> </li>
 	<% end %>
+<% end %>
 </ul>
+
 
 ## Project Restrictions  
 The following are considered out of scope for this project:  
 
 <ul>
+<% if data.proposal.restrictions.nil? %>
+	<li>Not include any features that require custom software development</li>
+<% else %>
 	<% data.proposal.restrictions.each do |p| %>
 		<li><%= p %></li>
 	<% end %>
+<% end %>
 </ul>
 
 ## Project Tracking
-The project will be tracked in Asana, our project development tool. Access to that tool is available upon request.
+
+The project will be tracked in Asana, our project development tool. We have found most clients prefer a weekly status email. However access to Asana is available upon request.
+
+
