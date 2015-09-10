@@ -1,0 +1,129 @@
+---
+defaults: &defaults
+  quantity: 'x'
+  included: true
+
+services:  
+  information_architecture: true
+  seo: true
+  content_strategy: true
+  web_design: true
+  web_development: true
+  reporting: true
+
+information_architecture:
+  goals: 
+    description: 'Determine site & business development goals'
+    explanation: ""
+    <<: *defaults
+  personas:
+    description: 'Create personas & buyer questions'
+    explanation: "For inbound marketing to be truly effective,
+      you have to know who you're talking to. We'll take what
+      you already know, bring in some new insights, and combine
+      them into several buyer personas. These fictitious people
+      represent an ideal client for your company and we'll use
+      them as the basis for a content strategy."
+    <<: *defaults
+  sitemap:  
+    description: 'Outline sitemap'
+    <<: *defaults
+  keyword_plan: 
+    description: 'Keyword plan'
+    explanation: "We'll coordinate with your team to create campaigns that work
+      for your personas. We'll research relevant keywords to help direct your
+      content production efforts, then optimize posts upon completion. Content
+      should be written for humans, not search engines, but phrasing & document
+      structure can go a long way with a little optimization."
+    <<: *defaults
+  cta:
+    description: 'Determine calls to action for site pages'
+    explanation: "Calls to action move people through your website through content 
+      offers and lead magnets. This is how you get more customers. We'll make sure 
+      there are opportunities for engagement on every page."
+    <<: *defaults
+
+seo:
+  keyword_plan: 
+    description: 'Keyword plan'
+    explanation: "We'll coordinate with your team to create campaigns that work
+      for your personas. We'll research relevant keywords to help direct your
+      content production efforts, then optimize posts upon completion. Content
+      should be written for humans, not search engines, but phrasing & document
+      structure can go a long way with a little optimization."
+    <<: *defaults
+
+content_strategy:  
+  content_audit:  
+    description: "Content audit & blog optimization"
+    explanation: "We'll review the current content at your site and
+      identify opportunities to enhance it for lead generation, 
+      including calls to action and interative mailing list subscriptions"
+    <<: *defaults
+  email_mktg:
+    description: "Set up email marketing"
+    explanation: "We'll set up an email marketing platform that facilitates
+      personalized marketing automation, so that you can producing engaging
+      interactions with minimal effort."
+    <<: *defaults
+  create_offers:
+    description: "Create content offers"
+    explanation: "New offers create new leads, so we'll need to continually
+      create new content that your customers will want to read. We'll coordinate
+      with your team to produce one modest new offer each month. Your team will
+      provide the information & body of knowledge and we'll provide the expertise
+      in formatting, layout, and delivery."
+    <<: *defaults 
+  competitive_analysis:
+    description: "Competitive analysis & benchmarking"
+    explanation: "We'll take a look at 'best-in-class' competitors in your industry, 
+      learn from what they're doing well, and exploit weaknesses in their strategies."
+    <<: *defaults
+
+
+web_design:
+  site_layouts:
+    description: "Design visual layouts for site pages (mobile-first)"
+    explanation: "We'll create visually-appealing themes and layouts for the informational 
+      pages on your site."
+    <<: *defaults
+  blog_layout:
+    description: 'Design visual layouts for blog'
+    explanation: "We'll create visually-appealing themes and layouts for your blog, with an 
+      eye towards lead generation."
+    <<: *defaults
+  prototype_site:
+    description: 'Create interactive prototype of the site'
+    explanation: "Before we launch your site, we'll create an interactive prototype, so that
+      there is no ambiguity about the look and feel of the site before it launches."
+    <<: *defaults
+  style_guide:
+    description: "Construct visual style guide"
+    explanation: "We'll construct a visual style guide, including the font choices and color 
+      codes, so that there's consistency across the brand and website."
+
+web_development:
+  build_website:
+    description: "Code & deploy website"
+    explanation: "Once we've settled on a design, we'll code & deploy your website."
+    <<: *defaults
+  host_website:
+    description: "We'll host your website on a fast, secure server."
+
+reporting:
+  reporting:
+    description: "Monthly reporting"
+    explanation: "We'll provide ongoing strategy & monthly reporting of our
+	      progress, so you can feel confident that things are moving forward. 
+	      We'll spnd time helping you to analyze existing results and 
+	      strategizing for the next step."
+    <<: *defaults
+  google_analytics:
+    description: "Implement Google Analytics & Funnel Tracking"
+    explanation: "Implement Google Analytics, create conversion goals and
+      tracking URLs for your landing pages, and design a dashboard that
+      reflects your marketing goals."
+    <<: *defaults
+
+
+# Todo: These descriptions work fine for the table...but what about long copy that explains what they are/mean? Maybe with visuals?

@@ -1,0 +1,46 @@
+---
+# information_architecture:
+#   goals: 
+#     description: 'Determine site & business development goals'
+#     explanation: ""
+#     <<: *defaults
+#   personas:
+#     description: 'Create personas & buyer questions'
+#     explanation: "For inbound marketing to be truly effective,
+#       you have to know who you're talking to. We'll take what
+#       you already know, bring in some new insights, and combine
+#       them into several buyer personas. These fictitious people
+#       represent an ideal client for your company and we'll use
+#       them as the basis for a content strategy."
+#     <<: *defaults
+#   sitemap:  
+#     description: 'Outline sitemap'
+#     <<: *defaults
+
+# seo:
+#   keyword_plan: 
+#     description: 'Keyword plan'
+#     <<: *defaults
+
+# design:
+#   site_layouts:
+#     description: 'Design visual layouts for site pages (mobile-first)'
+#     <<: *defaults
+#   blog_layout:
+#     description: 'Design visual layouts for blog'
+#     <<: *defaults
+#   prototype_site:
+#     description: 'Create interactive prototype of the site'
+#     <<: *defaults
+
+# convert_leads:
+#   cta:
+#     description: 'Determine calls to action for site pages'
+#     <<: *defaults
+#   lead_gen:
+#     description: 'Instrument site with lead generating technologies'
+#     <<: *defaults
+#   landing_pages:
+#     description: 'Implement landing pages with offers'
+
+# # Todo: These descriptions work fine for the table...but what about long copy that explains what they are/mean? Maybe with visuals?

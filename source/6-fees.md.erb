@@ -1,0 +1,13 @@
+# Fees
+## Investment
+Our fees are always based upon the project and not upon time units. That way you’re encourage to call upon us without worrying about a meter running, and we’re free to suggest additional areas of focus without concern about increasing your investment.
+
+The fee for the assistance detailed above will be **<%= data.proposal.proposal_price %>**.
+
+## Payment Terms
+Invoices will be submitted electronically, to <%= data.client.client_email %> (or an email address you designate). Invoices are due within 5 days of submission. Failure to pay invoices in a timely manner will result in the cessation of work.  
+
+For this project, the payment schedule will be as follows:
+
+* Invoice 1 will be due on <%= (Date.parse(data.proposal.proposal_date) + 7).strftime("%B %e, %Y") %>, in order to retain us.
+* Invoice 2 will be due upon completion of the project (anticipated <%= (Date.parse(data.proposal.end_date) + 7).strftime("%B %e, %Y") %>)
