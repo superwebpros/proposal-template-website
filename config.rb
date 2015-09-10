@@ -87,6 +87,8 @@ helpers do
 
 end
 
+activate :livereload
+
 # Notes
 #
 # We leave :directory_indexes inactive, so internal markdown links between pages

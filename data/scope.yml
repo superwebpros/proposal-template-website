@@ -1,11 +1,11 @@
 ---
 defaults: &defaults
-  quantity: 'x'
+  quantity: '&#x2713;'
   included: true
 
 services:  
   information_architecture: true
-  seo: true
+  seo: false
   content_strategy: true
   web_design: true
   web_development: true
@@ -14,10 +14,11 @@ services:
 information_architecture:
   goals: 
     description: 'Determine site & business development goals'
-    explanation: ""
+    explanation: "We will work with you to clarify your goals and decide what metrics matter most in determining
+      what constitutes a 'successful' project."
     <<: *defaults
   personas:
-    description: 'Create personas & buyer questions'
+    description: "Create personas to create focused content"
     explanation: "For inbound marketing to be truly effective,
       you have to know who you're talking to. We'll take what
       you already know, bring in some new insights, and combine
@@ -27,6 +28,7 @@ information_architecture:
     <<: *defaults
   sitemap:  
     description: 'Outline sitemap'
+    explanation: 'We will create a sitemap, highlighting the components and information architecture of the new site.'
     <<: *defaults
   keyword_plan: 
     description: 'Keyword plan'
@@ -35,7 +37,7 @@ information_architecture:
       content production efforts, then optimize posts upon completion. Content
       should be written for humans, not search engines, but phrasing & document
       structure can go a long way with a little optimization."
-    <<: *defaults
+    included: false
   cta:
     description: 'Determine calls to action for site pages'
     explanation: "Calls to action move people through your website through content 
@@ -55,29 +57,38 @@ seo:
 
 content_strategy:  
   content_audit:  
-    description: "Content audit & blog optimization"
+    description: "Content audit, implementation, and positioning (relative to the ecoysystem)"
     explanation: "We'll review the current content at your site and
-      identify opportunities to enhance it for lead generation, 
-      including calls to action and interative mailing list subscriptions"
+      identify opportunities to augment it to include information about events, 
+      spaces, and resources available within MSU and the community."
     <<: *defaults
   email_mktg:
-    description: "Set up email marketing"
-    explanation: "We'll set up an email marketing platform that facilitates
-      personalized marketing automation, so that you can producing engaging
-      interactions with minimal effort."
+    description: "Install email acquisition tools, sync with StartupLansing"
+    explanation: "We'll use a suite of tools that we have found to be successful
+      at acquiring email addresses, to help build up the email list.  We will also
+      sync it with StartupLansing, to help engage students in the broader ecosystem."
     <<: *defaults
   create_offers:
-    description: "Create content offers"
-    explanation: "New offers create new leads, so we'll need to continually
-      create new content that your customers will want to read. We'll coordinate
-      with your team to produce one modest new offer each month. Your team will
-      provide the information & body of knowledge and we'll provide the expertise
-      in formatting, layout, and delivery."
+    description: "Include StartupLansing content offers"
+    explanation: "StartupLansing has a series of high-quality offers 
+      intended to help people start companies, navigate the ecosystem, and
+      connect with other stakeholders. We'll provide some of these resources on
+      your site."
     <<: *defaults 
+  dynamic_calendar:
+    description: "Install dynamic event calendar"
+    explanation: "We will install a dynamic event calendar, pull from StartupLansing and
+      other resources, so that your audience is aware of events happening around the community."
+    <<: *defaults
   competitive_analysis:
     description: "Competitive analysis & benchmarking"
     explanation: "We'll take a look at 'best-in-class' competitors in your industry, 
       learn from what they're doing well, and exploit weaknesses in their strategies."
+    included: false
+  social_media:
+    description: "Set up easy sharing and viewing of social media"
+    explanation: "Students, and many of your other stakeholders, are on social media. We'll 
+      make it easy for them to share your content, as well as see what content you're sharing."
     <<: *defaults
 
 
@@ -101,6 +112,7 @@ web_design:
     description: "Construct visual style guide"
     explanation: "We'll construct a visual style guide, including the font choices and color 
       codes, so that there's consistency across the brand and website."
+    <<: *defaults
 
 web_development:
   build_website:
@@ -109,6 +121,18 @@ web_development:
     <<: *defaults
   host_website:
     description: "We'll host your website on a fast, secure server."
+    included: false
+  author_management:
+    description: "Multiple author management"
+    explanation: "Ultimately, content is king. We expect that you will likely want to 
+      syndicate content, have multiple guest authors contributing, and want people to be
+      able to share their stories. We'll make sure they can do that."
+    <<: *defaults
+  search:
+    description: "Include site search"
+    explanation: "As content proliferates, it can be hard to find. We'll include search,
+      so that content can be easily found."
+    <<: *defaults
 
 reporting:
   reporting:

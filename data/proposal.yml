@@ -1,15 +1,22 @@
-proposal_title: Building the definitive entrepreneurial information source for MSU students and faculty.
+proposal_title: Building the definitive entrepreneurial information source for Michigan State University students and faculty.
 proposal_date: September 9, 2015
 proposal_author: David Smith
 proposal_price: "$12,000"
 objectives:  
-  - Build a highly visual site (splashy images, live social media feeds, news, etc.)
-  - Create an efficient sitemap to help visitors quickly navigate to the information they need.
-  - Include case studies
-  - Build a best in class information resource (Purdue, MSU EA, etc.)
+  - "Building an engaging, highly visual site (splashy images, live social media feeds, news, etc.)"
+  - Architecting an efficient sitemap to help visitors quickly navigate to the information they need.
+  - Featuring successful students and projects related to entrepreneurship
+  - Building a "best in class" information resource
+start_date: September 15, 2015
 end_date: October 30, 2015
-#milestones:  
-#  -first 
-#  -second
+# milestones:  
+#   - "Milestone 1: Design Completed."
+#     - "Site architecture completed"
+#     - "Wiredrames depicting layouts, graphics, and images completed"
+#     - "Content document started"
+#     - "Expected Completion: 2 Weeks from Start"
+#   - "Milestone 2: Site Implemented"
+#     - The site will be deployed
+#     - Expected Completion: 2 weeks from completion of Milestone 1
 #restrictions:  
 #  - Not include any features that require custom software development
